@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700');
+
+$largeSpacing: 30px;
+$smallSpacing: 15px;
+$lt: 300;
+
+$smallScreen: 1000px;
+
+@mixin unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@mixin filterShadow($offset-x, $offset-y, $blur, $color) {
+  -webkit-filter: drop-shadow($offset-x $offset-y $blur $color);
+  filter: drop-shadow($offset-x $offset-y $blur $color);
+}
+
+@mixin brightness($percent) {
+  -webkit-filter: brightness($percent);
+  filter: brightness($percent);
+}
+
+@import 'App';
+@import 'Nav';
+@import 'Videos';

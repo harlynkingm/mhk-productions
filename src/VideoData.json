@@ -1,0 +1,138 @@
+{
+  "data": [
+    {
+      "section": "Viral Videos",
+      "videos": [
+        {
+          "id": "1",
+          "title": "Republican Debate as a Dog Show (2016)",
+          "description": "The 2016 Republican Presidential Debate re-edited as a Dog Show.",
+          "credits": "Edited",
+          "url": "https://www.youtube.com/embed/S4JDcxLjrfE?autoplay=1",
+          "thumb": "http://img.youtube.com/vi/S4JDcxLjrfE/mqdefault.jpg"
+        },
+        {
+          "id": "2",
+          "title": "Breaking Bad as a Romantic Comedy (2013)",
+          "description": "Breaking Bad re-edited into a typical romantic comedy.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/KWrRPohom3I?autoplay=1"
+        }
+      ]
+    },
+    {
+      "section": "Short Films",
+      "videos": [
+        {
+          "id": "3",
+          "title": "Piespeak (2016)",
+          "description": "A young girl tries to break the world record for saying all of the types of pie in the world in the fastest amount of time to prove she can be the best at something.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/UyLyFM24t78?autoplay=1"
+        },
+        {
+          "id": "4",
+          "title": "Metronome (2010)",
+          "description": "A man composes a piano concerto for his dying wife.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/Dl-wyP5MjCU?autoplay=1"
+        }
+      ]
+    },
+    {
+      "section": "Shorter Films",
+      "videos": [
+        {
+          "id": "5",
+          "title": "Hoops (2017)",
+          "description": "A basketball wants to fulfill its purpose.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/DueqYT2zjLI?autoplay=1"
+        },
+        {
+          "id": "6",
+          "title": "Wheels (2016)",
+          "description": "A unicycle wants a second wheel.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/kUplU1pEcvw?autoplay=1"
+        }
+      ]
+    },
+    {
+      "section": "Music Videos",
+      "videos": [
+        {
+          "id": "7",
+          "title": "Carnegie Mellon Cyphers (2016)",
+          "description": "A live video showcasing the freestyling abilities of the CMU Cyphers.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/a-wj-lNyQ9I?autoplay=1"
+        },
+        {
+          "id": "8",
+          "title": "Casaveda - In Cages (2016)",
+          "description": "Band members try to have fun at an amusement park.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/Dcz6xOiruE8?autoplay=1",
+          "thumb": "http://img.youtube.com/vi/Dcz6xOiruE8/mqdefault.jpg"
+        },
+        {
+          "id": "9",
+          "title": "It's Not Exactly Fatal (2016)",
+          "description": "A girl struggling with heroin addiction finds herself alienated from her friends and family.",
+          "credits": "",
+          "url": "https://player.vimeo.com/video/195984001?title=0&byline=0&portrait=0&autoplay=1",
+          "thumb":"https://i.vimeocdn.com/video/608341094_1920x1080.jpg"
+        },
+        {
+          "id": "10",
+          "title": "Omega (2015)",
+          "description": "A girl rushing a Sorority has a dance-filled nightmare.",
+          "credits": "",
+          "url": "https://player.vimeo.com/video/166117664?title=0&byline=0&portrait=0&autoplay=1",
+          "thumb":"https://i.vimeocdn.com/video/570147165_1920x1080.jpg"
+        }
+      ]
+    },
+    {
+      "section": "Advertisements",
+      "videos": [
+        {
+          "id": "11",
+          "title": "Faces of Identity (2017)",
+          "description": "Made for the 2017 Carnegie Mellon International Film Festival, this trailer showcases the multicultural fabric of refugees in America.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/2sI4fCBrziU?autoplay=1"
+        },
+        {
+          "id": "12",
+          "title": "Carnegie Mellon Pole Vault Ad (2017)",
+          "description": "Showcasing the talents of the Carnegie Mellon Pole Vaulting team.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/-sCMqJqNqvM?autoplay=1"
+        },
+        {
+          "id": "13",
+          "title": "Valeo Innovation Challenge (2016)",
+          "description": "A submission to the Valeo Innovation Challenge, using Piezoelectric Materials to remove ice from frosty windshields.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/zqdDyAd4St4?autoplay=1"
+        },
+        {
+          "id": "14",
+          "title": "Shot for Shot Film Festival Intro (2016)",
+          "description": "The introductory video to the 2016 Shot for Shot Film Festival at Carnegie Mellon.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/ndYLgKaBTRk?autoplay=1"
+        },
+        {
+          "id": "15",
+          "title": "Faces of Conflict (2016)",
+          "description": "Made for the 2016 Carnegie Mellon International Film Festival, this trailer focuses on the borders that separate us and why we're all the same.",
+          "credits": "",
+          "url": "https://www.youtube.com/embed/F56-6Kl9zyY?autoplay=1"
+        }
+      ]
+    }
+  ]
+}

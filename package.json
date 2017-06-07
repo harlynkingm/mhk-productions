@@ -6,8 +6,11 @@
     "react-scripts": "1.0.7"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-scrollchor": "^3.0.0",
+    "react-waypoint": "^7.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
