@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollMonitor from 'react-scrollmonitor';
 import play from './img/play.png';
 
 export default class Videos extends Component {
@@ -18,9 +19,13 @@ export default class Videos extends Component {
     )
   }
 
+  receiveStateChange(watcher) {
+    console.log(watcher);
+  }
+
   renderVideo(video, index){
     return(
-      <Video video={video} key={index}/>
+      <Video video={video} key={index} changeSelected={this.props.changeSelected} stateChange={this.receiveStateChange}/>
     )
   }
 
@@ -50,6 +55,7 @@ class Video extends Component {
   }
 
   render() {
+    let passSelected = this.props.changeSelected.bind(this, this.props.video.id, "SCROLL");
     let thumb = '';
     if (this.props.video.thumb){
       thumb = this.props.video.thumb;
@@ -58,6 +64,7 @@ class Video extends Component {
       thumb = 'https://img.youtube.com/vi/' + id + '/maxresdefault.jpg';
     }
     return (
+      <ScrollMonitor fullyEnterViewport={passSelected}>
       <div className="mainVideo" id={this.props.video.id}>
         <h4 className="mainVideoTitle">{this.props.video.title}</h4>
         <p className="mainVideoDescription">
@@ -76,6 +83,7 @@ class Video extends Component {
           </div>
         </div>
       </div>
+      </ScrollMonitor>
     )
   }
-}
+};

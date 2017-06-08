@@ -8,6 +8,7 @@
 .pageTitle {
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .section {
@@ -28,6 +29,14 @@
 
 .sectionVideos {
   display: none;
+}
+
+.sectionVideos .active {
+  font-weight: 400;
+}
+
+.sectionVideos .active:hover {
+  opacity: 1;
 }
 
 .videoTitle {

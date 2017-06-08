@@ -6,9 +6,7 @@ export default class Nav extends Component {
 
   constructor(props){
     super(props);
-    this.state = {
-      sliding: false
-    };
+    this.sliding = false;
     this.renderSections = this.renderSections.bind(this);
     this.renderVideos = this.renderVideos.bind(this);
     this.setupJquery = this.setupJquery.bind(this);
@@ -27,22 +25,19 @@ export default class Nav extends Component {
     //   $(this).next().slideToggle(200, "linear");
     // });
     let parent = this;
-    $(".sectionTitle").mouseenter(function(){
-      if (!parent.state.sliding && !$(this).next().hasClass("sectionVideosDown")){
-        parent.setState({
-          sliding: true
-        });
-        $(".sectionVideosDown").slideUp(200, function(){
-          $(this).removeClass("sectionVideosDown");
-        });
-        $(this).next().slideDown(200, function(){
-          parent.setState({
-            sliding: false
-          });
-        });
-        $(this).next().addClass("sectionVideosDown");
-      }
+    $(".sectionTitle").click(function(){
+      parent.openSection($(this).next(), parent);
     });
+  }
+
+  openSection(section, parent){
+    if (!section.hasClass("sectionVideosDown")){
+      $(".sectionVideosDown").slideUp(200, function(){
+        $(this).removeClass("sectionVideosDown");
+      });
+      section.slideDown(200);
+      section.addClass("sectionVideosDown");
+    }
   }
 
   renderSections(section, index) {
@@ -57,9 +52,15 @@ export default class Nav extends Component {
   }
 
   renderVideos(video, index) {
+    let passSelected = this.props.changeSelected.bind(this, video.id, "NAV");
+    var classes = "videoTitle";
+    if (video.id === this.props.selected){
+      classes += " active";
+      this.openSection($(".vid" + video.id).parent(), this);
+    }
     return(
-      <Scrollchor to={video.id} key={index}>
-        <p className="videoTitle">{video.title}</p>
+      <Scrollchor to={video.id} key={index} className={"vid" + video.id}>
+        <p className={classes} onClick={passSelected}>{video.title}</p>
       </Scrollchor>
     )
   }
@@ -67,7 +68,9 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="nav">
-        <h5 className="pageTitle">MHK Productions</h5>
+        <Scrollchor to="">
+          <h5 className="pageTitle">MHK Productions</h5>
+        </Scrollchor>
         {this.props.videoData.map(this.renderSections)}
       </div>
     )

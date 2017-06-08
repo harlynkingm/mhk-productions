@@ -11,7 +11,8 @@
 
 .pageTitle {
   text-transform: uppercase;
-  font-weight: 500; }
+  font-weight: 500;
+  cursor: pointer; }
 
 .section {
   font-weight: 300;
@@ -32,6 +33,12 @@
 
 .sectionVideos {
   display: none; }
+
+.sectionVideos .active {
+  font-weight: 400; }
+
+.sectionVideos .active:hover {
+  opacity: 1; }
 
 .videoTitle {
   -moz-user-select: -moz-none;
@@ -63,7 +70,7 @@ a:last-child .videoTitle {
   .pageTitle {
     text-align: center; } }
 .videos {
-  margin-top: 30px;
+  padding-top: 30px;
   margin-left: 400px;
   margin-right: 20vw; }
 
@@ -72,7 +79,7 @@ a:last-child .videoTitle {
 
 .mainSectionTitle {
   text-transform: uppercase;
-  font-weight: 400; }
+  font-weight: 600; }
 
 .mainVideoTitle {
   font-style: italic;

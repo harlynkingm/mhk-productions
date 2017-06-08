@@ -10,7 +10,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-scrollchor": "^3.0.0",
-    "react-waypoint": "^7.0.3"
+    "react-scrollmonitor": "0.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
