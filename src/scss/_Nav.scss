@@ -92,10 +92,6 @@ a:last-child .videoTitle {
     position: fixed;
   }
 
-  .menuIcon:hover {
-    transform: rotateZ(45deg);
-  }
-
   .menuIconActive {
     transform: rotateZ(90deg) !important;
   }
