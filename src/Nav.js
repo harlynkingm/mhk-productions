@@ -16,6 +16,7 @@ export default class Nav extends Component {
     this.setupJquery = this.setupJquery.bind(this);
     this.selectVideo = this.selectVideo.bind(this);
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.toggleIfOpen = this.toggleIfOpen.bind(this);
   }
 
   componentDidMount() {
@@ -59,9 +60,7 @@ export default class Nav extends Component {
 
   selectVideo(id){
     this.props.changeSelected(id, "NAV");
-    if (this.state.menuOpen){
-      this.toggleMenu();
-    }
+    this.toggleIfOpen();
   }
 
   renderVideos(video, index) {
@@ -81,9 +80,16 @@ export default class Nav extends Component {
   toggleMenu() {
     $(".menuIcon").toggleClass("menuIconActive");
     $(".nav").toggleClass("navActive");
+    $("body").toggleClass("noScroll");
     this.setState({
       menuOpen: !this.state.menuOpen
     });
+  }
+
+  toggleIfOpen(){
+    if (this.state.menuOpen){
+      this.toggleMenu();
+    }
   }
 
   render() {
@@ -91,7 +97,9 @@ export default class Nav extends Component {
       <div className="nav">
         <img src={menu} className="menuIcon" alt="Menu" onClick={this.toggleMenu}/>
         <Scrollchor to="">
-          <h5 className="pageTitle">MHK Productions</h5>
+          <h5 className="pageTitle" onClick={this.toggleIfOpen}>
+            MHK Productions
+          </h5>
         </Scrollchor>
         {this.props.videoData.map(this.renderSections)}
       </div>

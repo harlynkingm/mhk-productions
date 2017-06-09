@@ -3,6 +3,9 @@
   margin-top: 80px;
   margin-left: 350px; }
 
+.noScroll {
+  overflow: hidden; }
+
 .nav {
   position: fixed;
   left: 30px;
