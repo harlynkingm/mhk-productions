@@ -178,6 +178,7 @@ a:last-child .videoTitle {
 @media (max-width: 1000px) {
   .videos {
     margin-left: 10vw;
+    margin-right: 10vw;
     margin-top: 50px; }
 
   .mainVideoDescription {
