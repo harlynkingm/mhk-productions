@@ -54,6 +54,14 @@ class Video extends Component {
     });
   }
 
+  renderAccolade(accolade, index){
+    return (
+      <span className="mainVideoAccolade" key={index}>
+        {accolade}
+      </span>
+    )
+  }
+
   render() {
     let passSelected = this.props.changeSelected.bind(this, this.props.video.id, "SCROLL");
     let thumb = '';
@@ -66,9 +74,17 @@ class Video extends Component {
     return (
       <ScrollMonitor fullyEnterViewport={passSelected}>
       <div className="mainVideo" id={this.props.video.id}>
-        <h4 className="mainVideoTitle">{this.props.video.title}</h4>
+        <h4 className="mainVideoTitle">
+          {this.props.video.title}
+        </h4>
+        <p className="mainVideoAccolades">
+          {this.props.video.accolades &&
+            this.props.video.accolades.map(this.renderAccolade)
+          }
+        </p>
         <p className="mainVideoDescription">
           {this.props.video.description}
+          <br />{this.props.video.credits}
         </p>
         <div className="auto-resizable-iframe">
           <div>

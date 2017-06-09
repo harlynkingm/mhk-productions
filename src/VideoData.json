@@ -1,41 +1,45 @@
 {
   "data": [
     {
-      "section": "Viral Videos",
+      "section": "Short Films",
       "videos": [
         {
           "id": "1",
-          "title": "Republican Debate as a Dog Show (2016)",
-          "description": "The 2016 Republican Presidential Debate re-edited as a Dog Show.",
-          "credits": "Edited",
-          "url": "https://www.youtube.com/embed/S4JDcxLjrfE?autoplay=1",
-          "thumb": "http://img.youtube.com/vi/S4JDcxLjrfE/mqdefault.jpg"
+          "title": "Piespeak (2016)",
+          "description": "A young girl tries to break the world record for saying all of the types of pie in the world in the fastest amount of time to prove she can be the best at something.",
+          "credits": "",
+          "accolades": ["Grand Jury Prize - Carnegie Mellon Shot for Shot Film Festival"],
+          "url": "https://www.youtube.com/embed/UyLyFM24t78?autoplay=1"
         },
         {
           "id": "2",
-          "title": "Breaking Bad as a Romantic Comedy (2013)",
-          "description": "Breaking Bad re-edited into a typical romantic comedy.",
+          "title": "Metronome (2010)",
+          "description": "A man composes a piano concerto for his wife.",
           "credits": "",
-          "url": "https://www.youtube.com/embed/KWrRPohom3I?autoplay=1"
+          "accolades": ["Best Short Film - Dr. Phillips High School Film Festival", "Featured - Enzian Theater Film Slam"],
+          "url": "https://www.youtube.com/embed/Dl-wyP5MjCU?autoplay=1"
         }
       ]
     },
     {
-      "section": "Short Films",
+      "section": "Viral Videos",
       "videos": [
         {
           "id": "3",
-          "title": "Piespeak (2016)",
-          "description": "A young girl tries to break the world record for saying all of the types of pie in the world in the fastest amount of time to prove she can be the best at something.",
+          "title": "Republican Debate as a Dog Show (2016)",
+          "description": "The 2016 Republican Presidential Debate re-edited as a Dog Show.",
           "credits": "",
-          "url": "https://www.youtube.com/embed/UyLyFM24t78?autoplay=1"
+          "accolades": ["Featured - AV Club 'Great Job, Internet!'"],
+          "url": "https://www.youtube.com/embed/S4JDcxLjrfE?autoplay=1",
+          "thumb": "http://img.youtube.com/vi/S4JDcxLjrfE/mqdefault.jpg"
         },
         {
           "id": "4",
-          "title": "Metronome (2010)",
-          "description": "A man composes a piano concerto for his dying wife.",
+          "title": "Breaking Bad as a Romantic Comedy (2013)",
+          "description": "Breaking Bad re-edited into a typical romantic comedy.",
           "credits": "",
-          "url": "https://www.youtube.com/embed/Dl-wyP5MjCU?autoplay=1"
+          "accolades": ["Viral Video of the Week - Yahoo! News", "Featured - Huffington Post", "Featured - CollegeHumor"],
+          "url": "https://www.youtube.com/embed/KWrRPohom3I?autoplay=1"
         }
       ]
     },
@@ -45,7 +49,7 @@
         {
           "id": "5",
           "title": "Hoops (2017)",
-          "description": "A basketball wants to fulfill its purpose.",
+          "description": "A basketball wants to fulfill its destiny.",
           "credits": "",
           "url": "https://www.youtube.com/embed/DueqYT2zjLI?autoplay=1"
         },
@@ -80,7 +84,7 @@
           "id": "9",
           "title": "It's Not Exactly Fatal (2016)",
           "description": "A girl struggling with heroin addiction finds herself alienated from her friends and family.",
-          "credits": "",
+          "credits": "Credits: Produced, Edited",
           "url": "https://player.vimeo.com/video/195984001?title=0&byline=0&portrait=0&autoplay=1",
           "thumb":"https://i.vimeocdn.com/video/608341094_1920x1080.jpg"
         },
@@ -88,7 +92,7 @@
           "id": "10",
           "title": "Omega (2015)",
           "description": "A girl rushing a Sorority has a dance-filled nightmare.",
-          "credits": "",
+          "credits": "Credits: Edited",
           "url": "https://player.vimeo.com/video/166117664?title=0&byline=0&portrait=0&autoplay=1",
           "thumb":"https://i.vimeocdn.com/video/570147165_1920x1080.jpg"
         }

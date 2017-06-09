@@ -47,6 +47,7 @@
   -o-user-select: none;
   user-select: none;
   font-style: italic;
+  padding-right: 15px;
   padding-left: 15px;
   padding-bottom: 7.5px;
   margin: 0;
@@ -55,9 +56,18 @@
 a:last-child .videoTitle {
   padding-bottom: 0; }
 
+.menuIcon {
+  display: none;
+  width: 20px;
+  top: 25px;
+  left: 20px;
+  padding: 10px;
+  transition: transform 0.2s;
+  cursor: pointer; }
+
 @media (max-width: 1000px) {
-  .section {
-    display: none; }
+  .navActive {
+    height: 100vh !important; }
 
   .nav {
     width: 100vw;
@@ -65,10 +75,25 @@ a:last-child .videoTitle {
     top: 0;
     padding-top: 30px;
     background-color: white;
-    z-index: 100; }
+    z-index: 100;
+    height: 50px;
+    transition: height 0.3s; }
+
+  .section {
+    padding-left: 45px; }
 
   .pageTitle {
-    text-align: center; } }
+    text-align: center; }
+
+  .menuIcon {
+    display: block;
+    position: fixed; }
+
+  .menuIcon:hover {
+    transform: rotateZ(45deg); }
+
+  .menuIconActive {
+    transform: rotateZ(90deg) !important; } }
 .videos {
   padding-top: 30px;
   margin-left: 400px;
@@ -82,13 +107,36 @@ a:last-child .videoTitle {
   font-weight: 600; }
 
 .mainVideoTitle {
-  font-style: italic;
   margin-bottom: 10px; }
 
+.mainVideoAccolades {
+  margin-bottom: 10px; }
+
+.mainVideoAccolade {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  font-size: 70%;
+  font-weight: bold;
+  padding: 4px 10px 4px 10px;
+  margin-right: 6px;
+  letter-spacing: 0.3px;
+  border-radius: 3px;
+  opacity: 0.3;
+  cursor: default; }
+
 .mainVideoDescription {
+  font-style: italic;
   font-weight: 300;
   font-size: 150%;
-  margin-bottom: 15px; }
+  margin-bottom: 18px;
+  opacity: 0.7;
+  clear: left; }
 
 .auto-resizable-iframe {
   max-width: 100%;
@@ -130,7 +178,7 @@ a:last-child .videoTitle {
 @media (max-width: 1000px) {
   .videos {
     margin-left: 10vw;
-    margin-top: 90px; }
+    margin-top: 50px; }
 
   .mainVideoDescription {
     font-size: 100%; }
@@ -139,6 +187,25 @@ a:last-child .videoTitle {
     width: 50px; }
 
   .videoImage:hover .videoPlay {
-    width: 55px; } }
+    width: 55px; }
+
+  .mainSectionTitle {
+    font-size: 3.5rem; }
+
+  .mainVideoTitle {
+    margin-bottom: 0; }
+
+  .mainVideoAccolade {
+    line-height: 150%;
+    margin: 5px 0 5px 0;
+    display: block;
+    float: left;
+    clear: both; }
+
+  .mainVideoAccolade:first-child {
+    margin-top: 10px; }
+
+  .mainVideoAccolade:last-child {
+    margin-bottom: 10px; } }
 
 /*# sourceMappingURL=index.css.map */
