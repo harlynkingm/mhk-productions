@@ -8,9 +8,14 @@ export default class Nav extends Component {
   constructor(props){
     super(props);
     this.sliding = false;
+    this.state = {
+      menuOpen: false
+    }
     this.renderSections = this.renderSections.bind(this);
     this.renderVideos = this.renderVideos.bind(this);
     this.setupJquery = this.setupJquery.bind(this);
+    this.selectVideo = this.selectVideo.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
   componentDidMount() {
@@ -52,8 +57,15 @@ export default class Nav extends Component {
     )
   }
 
+  selectVideo(id){
+    this.props.changeSelected(id, "NAV");
+    if (this.state.menuOpen){
+      this.toggleMenu();
+    }
+  }
+
   renderVideos(video, index) {
-    let passSelected = this.props.changeSelected.bind(this, video.id, "NAV");
+    let passSelected = this.selectVideo.bind(this, video.id);
     var classes = "videoTitle";
     if (video.id === this.props.selected){
       classes += " active";
@@ -69,6 +81,9 @@ export default class Nav extends Component {
   toggleMenu() {
     $(".menuIcon").toggleClass("menuIconActive");
     $(".nav").toggleClass("navActive");
+    this.setState({
+      menuOpen: !this.state.menuOpen
+    });
   }
 
   render() {

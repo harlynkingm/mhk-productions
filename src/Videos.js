@@ -19,13 +19,9 @@ export default class Videos extends Component {
     )
   }
 
-  receiveStateChange(watcher) {
-    console.log(watcher);
-  }
-
   renderVideo(video, index){
     return(
-      <Video video={video} key={index} changeSelected={this.props.changeSelected} stateChange={this.receiveStateChange}/>
+      <Video video={video} key={index} changeSelected={this.props.changeSelected}/>
     )
   }
 
