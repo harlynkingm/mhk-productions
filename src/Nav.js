@@ -31,6 +31,9 @@ export default class Nav extends Component {
     // $(".sectionTitle").click(function(){
     //   $(this).next().slideToggle(200, "linear");
     // });
+    $(".nav").bind('touchmove', function(e){
+      e.preventDefault();
+    });
     let parent = this;
     $(".sectionTitle").click(function(){
       parent.openSection($(this).next(), parent);
