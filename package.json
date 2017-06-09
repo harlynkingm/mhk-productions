@@ -13,9 +13,11 @@
     "react-scrollmonitor": "0.0.5"
   },
   "scripts": {
+    "deploy" : "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "http://maxharlynking.com/mhk-productions"
 }
